@@ -3,20 +3,30 @@ const app = express();
 
 app.use(express.static("public"));
 
-import path from "path";
+import { frontpagePage, toolsPage, dataTypesPage, restApiInfoPage } from "./templatingEngine/pages.js";
 
 app.get("/", (req, res) => {
-    res.sendFile(path.resolve("public/frontpage/index.html"));
+    res.send(frontpagePage);
 });
 
 app.get("/tools", (req, res) => {
-    res.sendFile(path.resolve("public/tools/tools.html"));
+    res.send(toolsPage);
 });
 
-app.listen(8080, (error) => {
+app.get("/data-types", (req, res) => {
+    res.send(dataTypesPage);
+});
+
+app.get("/rest-api-info", (req, res) => {
+    res.send(restApiInfoPage);
+});
+
+const PORT = process.env.PORT ?? 8080;
+
+app.listen(PORT, (error) => {
     if(error){
         console.log(error);
         return;
     }
-    console.log("Running on port:", 8080);
+    console.log("Running on port:", PORT);
 });
