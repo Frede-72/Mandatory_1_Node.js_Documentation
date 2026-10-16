@@ -18,7 +18,7 @@ const expressInfo = readPage("public/pages/tools/express/express-info.html");
 const gitCommands = readPage("public/pages/tools/git/git-commands.html");
 const nodeInfo = readPage("public/pages/tools/node/node-info.html");
 const nodemonInfo = readPage("public/pages/tools/nodemon/nodemon-info.html");
-const npmInfo = readPage("public/pages/tools/npm/npm-info"); 
+const npmInfo = readPage("public/pages/tools/npm/npm-info.html"); 
 
 export const frontpagePage = constructPage(frontpage);
 

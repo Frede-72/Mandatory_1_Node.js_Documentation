@@ -1,3 +1,23 @@
 h1 {
     color: red;
 }
+
+.code-block {
+    background-color: black;
+    color: white;
+}
+
+.output-block {
+    background-color: gray;
+    color: black;
+}
+
+.text-block {
+    background-color: white;
+    color: black;
+}
+
+.terminal-block {
+    background-color: darkgray;
+    color: black;
+}
