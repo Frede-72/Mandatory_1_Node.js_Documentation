@@ -1,2 +1,20 @@
 <h1>NODEMON</h1>
+<div class="text-block">
+    Nodemon restarts the application any time a change is made. <br>
+    This helps avoid having to type node {File_name} all the time.
+    To install use the command:
+    <div class="terminal-block">$ npm install -g nodemon</div> <br>
+    And then run your application with:
+    <div class="terminal-block">$ nodemon {File_name}</div>
+</div>
 <h4>nodemon.json</h4>
+<div class="text-block">
+    By default nodemon does not restart on changes to html and css. <br>
+    If we want that we can make a file called nodemon.js. Here we can add:
+    <div class="code-block">
+    { <br>
+    "ext": "js,mjs,cjs,json,css,html" <br>
+    }
+    </div>
+    To specify the file types we want to have nodemon restart the application when changed.
+</div>

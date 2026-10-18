@@ -1,5 +1,24 @@
 <h1>REST API</h1>
-<h4>correct verb</h4>
-<h4>Ordering</h4>
-<h4>plural noun naming</h4>
-<h4>crud</h4>
+<div class="text-block">
+    The 5 HTTP-verbs we use are: <br>
+    GET - Retrieve the resource(s) <br>
+    POST - Create a new resource<br>
+    PUT - Replace existing resource with another resource<br>
+    PATCH - Replace parts of existing resource<br>
+    DELETE - Delete resource<br><br>
+    In this order. For naming we want to use a noun in plural form.
+    <h3>Example:</h3>
+</div>
+<div class="code-block">
+app.get('/animals', (req, res) => { res.send() });
+<br><br>
+app.get('/animals/:id', (req, res) => { res.send() });
+<br><br>
+app.post('/animals' , (req, res) => { res.send() });
+<br><br>
+app.put('/animals/:id', (req, res) => { res.send() });
+<br><br>
+app.patch('/animals/:id', (req, res) => { res.send() });
+<br><br>
+app.delete('/animals/:id', (req, res) => { res.send() });
+</div>

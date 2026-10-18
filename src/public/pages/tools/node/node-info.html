@@ -1,4 +1,29 @@
-<h1>NODE</h1>
-<h4>node modules</h4>
-<h4>common js vs ES modules</h4>
+<h1>NODE.JS</h1>
+<div class="text-block">
+    Node.js makes it possible to run javascript outside of the browser. <br>
+    Node.js can be downloaded here: 
+<a href="https://nodejs.org/en/download">https://nodejs.org/en/download</a> <br>
+    To run a file with node use the command: <br>
+<div class="terminal-block">$ node {File_name}</div> <br>
+</div>
+<div class="text-block">
+    The node_modules folder is where our third-party dependencies are stored. <br>
+    We don't want to push the node_modules folder. 
+    Instead the package.json file tells what dependencies we use. 
+    To install these dependencies we use <a href="/tools/npm">npm</a>.
+<div class="terminal-block">$ npm install</div>
+</div>
+<h4>CommonJS vs ES modules</h4>
+<div class="text-block">
+    CommonJS loads synchronous while ES modules loads asynchronous <br>
+    By default Node.js uses CommonJS. It can be changed by adding
+<div class="code-block">
+   "type": "module"
+</div>
+    To package.json
+</div>
 <h4>import export</h4>
+<div class="text-block">
+    CommonJS uses require and module.exports <br>
+    ES modules uses import and export
+</div>
