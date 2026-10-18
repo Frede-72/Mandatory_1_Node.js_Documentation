@@ -1,3 +1,30 @@
 <h1>EXPRESS</h1>
-<h4>Send data over HTTP</h4>
-<h4>serve static files</h4>
+<div class="text-block">
+    A server with express (ES module):
+    <div class="code-block">
+    import express from "express"; <br>
+    const app = express("public"); <br> 
+    <br>
+    app.use(express.json()); <br>
+    <br>
+    const PORT = 8080;<br>
+    <br>
+    app.listen(PORT, error => { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;if(error) { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(error); <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;console.log("Server running on port: " , PORT); <br>
+    });
+    </div>
+    express.json() allows us to parse the json in requests. <br>
+    To send data with GET requests we can do:
+    <div class="code-block">
+        app.get('/', (req, res) => { <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;res.send({ data: "Hello" }); <br>
+        });
+    </div>
+    This displays { data: "Hello" } on the "/" endpoint <br>
+    To serve static files we can add:
+    <div class="code-block">app.use(express.static("public")); </div>
+    public means only files in the public folder can be accessed
+</div>
