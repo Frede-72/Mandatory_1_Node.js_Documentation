@@ -6,9 +6,8 @@ app.use(express.static("public"));
 import { frontpagePage, codeConventionsPage, dataTypesPage,
     datePage, fetchPage, functionsPage,
     loopsPage, restApiInfoPage, htmlInfoPage,
-    redirectionInfoPage, toolsPage, expressInfoPage,
-    gitCommandsPage, nodeInfoPage, nodemonInfoPage,
-    npmInfoPage } from "./templatingEngine/pages.js";
+    toolsPage, expressInfoPage,gitCommandsPage,
+    nodeInfoPage, nodemonInfoPage, npmInfoPage } from "./templatingEngine/pages.js";
 
 app.get("/", (req, res) => {
     res.send(frontpagePage);
@@ -44,10 +43,6 @@ app.get("/rest-api", (req, res) => {
 
 app.get("/html", (req, res) => {
     res.send(htmlInfoPage);
-});
-
-app.get("/redirection", (req, res) => {
-    res.send(redirectionInfoPage);
 });
 
 app.get("/tools", (req, res) => {

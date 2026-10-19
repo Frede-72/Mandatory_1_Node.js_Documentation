@@ -11,7 +11,6 @@ const loops = readPage("public/pages/code/loops/loops.html");
 
 const restApiInfo = readPage("public/pages/api/rest-api-info.html");
 const htmlInfo = readPage("public/pages/html/html-info.html");
-const redirectionInfo = readPage("public/pages/redirection/redirection-info.html");
 
 const tools = readPage("public/pages/tools/tools.html");
 const expressInfo = readPage("public/pages/tools/express/express-info.html");
@@ -22,20 +21,19 @@ const npmInfo = readPage("public/pages/tools/npm/npm-info.html");
 
 export const frontpagePage = constructPage(frontpage);
 
-export const codeConventionsPage = constructPage(codeConventions);
-export const dataTypesPage = constructPage(dataTypes);
-export const datePage = constructPage(date);
-export const fetchPage = constructPage(fetch);
-export const functionsPage = constructPage(functions);
-export const loopsPage = constructPage(loops);
+export const codeConventionsPage = constructPage(codeConventions, "Code Conventions");
+export const dataTypesPage = constructPage(dataTypes, "Data Types");
+export const datePage = constructPage(date, "Date");
+export const fetchPage = constructPage(fetch, "Fetch");
+export const functionsPage = constructPage(functions, "Functions");
+export const loopsPage = constructPage(loops, "Loops");
 
-export const restApiInfoPage = constructPage(restApiInfo);
-export const htmlInfoPage = constructPage(htmlInfo);
-export const redirectionInfoPage = constructPage(redirectionInfo);
+export const restApiInfoPage = constructPage(restApiInfo, "REST API");
+export const htmlInfoPage = constructPage(htmlInfo, "HTML");
 
-export const toolsPage = constructPage(tools);
-export const expressInfoPage = constructPage(expressInfo);
-export const gitCommandsPage = constructPage(gitCommands);
-export const nodeInfoPage = constructPage(nodeInfo);
-export const nodemonInfoPage = constructPage(nodemonInfo);
-export const npmInfoPage = constructPage(npmInfo);
+export const toolsPage = constructPage(tools, "Tools");
+export const expressInfoPage = constructPage(expressInfo, "Express");
+export const gitCommandsPage = constructPage(gitCommands, "Git");
+export const nodeInfoPage = constructPage(nodeInfo, "Node.js");
+export const nodemonInfoPage = constructPage(nodemonInfo, "Nodedmon");
+export const npmInfoPage = constructPage(npmInfo, "npm");

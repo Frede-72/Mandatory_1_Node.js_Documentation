@@ -21,3 +21,13 @@ h1 {
     background-color: darkgray;
     color: black;
 }
+
+body {
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
