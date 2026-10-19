@@ -1,1 +1,26 @@
-<h1>DATE</h1>
+<h1>DATE</h1>   
+<div class="text-block">
+    We can create a new Date object with:
+    <div class="code-block">
+        const date = new Date();
+    </div>
+    <br>
+        Using for example .getMonth and .getDay you get a number return. <br>
+        (Example made monday 19. october 2026) 
+    <div class="code-block">
+        console.log(date.getMonth(), date.getDay()); <br>
+    </div>
+    <div class="output-block">
+        9 1
+    </div>
+    9 refers to the 10th month october, as it is zero-indexed. 1 is monday as 0 is sunday. 
+    <br> <br>
+    To get the month and day as text we can use .toLocaleString
+    <div class="code-block">
+        console.log(date.toLocaleString("en-uk", {month: "long" , weekday: "long"}));
+    </div>
+    <div class="output-block">
+        October Monday
+    </div>
+    
+</div>
