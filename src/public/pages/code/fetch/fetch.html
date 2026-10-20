@@ -1,1 +1,18 @@
 <h1>FETCH</h1>
+<div class="text-block">
+    To make a fetch request to our API and show the result in a h3 element with id counter:
+<div class="code-block">
+    app.get("/api/counter" , (req, res) => { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;res.send({ data: ++counter }); <br>
+    });
+</div>
+We can write in a script in index.html:
+<div class="code-block">
+    fetch("/api/counter") <br>
+    .then((response) => response.json()) <br>
+    .then((result) => { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;const counterH3 = document.getElementById("counter"); <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;counterH3.textContent = result.data; <br>
+    });
+</div>
+</div>
