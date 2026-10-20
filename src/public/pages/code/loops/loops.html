@@ -15,5 +15,17 @@
 Shorter and more readable code. Gives more information about what we want to do. <br>
 Avoids out of bounds errors and for of/in confusion. <br>
 Both element and index can be accessed at the same time. <br>
-We don't mutate the original list
+We don't mutate the original list <br>
+Example:
+<div class="code-block">
+    const numbers = [1,2,3,4,5]; <br>
+    <br>
+    const doubleNumber = numbers.map((number) => number * 2); <br>
+    console.log(doubleNumber); <br>
+    console.log(numbers);
+</div>
+    <div class="output-block">
+        [ 2, 4, 6, 8, 10 ] <br>
+        [ 1, 2, 3, 4, 5 ]
+    </div>
 </div>
