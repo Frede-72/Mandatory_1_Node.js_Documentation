@@ -1,23 +1,28 @@
 h1 {
     color: red;
+    text-align: center;
 }
 
 .code-block {
+    padding: 1vh;
     background-color: black;
     color: white;
 }
 
 .output-block {
+    padding: 1vh;
     background-color: gray;
     color: black;
 }
 
 .text-block {
+    padding: 1vh;
     background-color: white;
     color: black;
 }
 
 .terminal-block {
+    padding: 1vh;
     background-color: darkgray;
     color: black;
 }
