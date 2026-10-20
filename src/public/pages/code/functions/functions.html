@@ -1,3 +1,34 @@
 <h1>FUNCTIONS</h1>
+<div class="text-block">
+<div class="code-block">
+    console.log(getRandomInt(5, 10)); <br>
+    <br>
+    function getRandomInt(min, max) { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return Math.floor(Math.random() * (max - min + 1) + min); <br>
+    }
+</div>
+<div class="output-block">
+    6
+</div>
+Due to hoisting we can call the function before it is declared. As the default Javascript behavior is to move declarations to the top.
+
 <h4>Arrow function</h4>
+We can write the same function as an arrow function:
+<div class="code-block">
+    const getRandomIntArrowFunction = (min, max) => { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return Math.floor(Math.random() * (max - min + 1) + min); <br>
+    };
+</div>
+
 <h4>Call-back functions</h4>
+    A function reference provided as an argument with the posibility (perhaps) of being called
+    Example:
+    <div class="code-block">
+    function getRandomIntCallBackFunction(min, max, randomIntFunction) { <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return randomIntFunction(min,max); <br>
+    } <br>
+    console.log(getRandomIntCallBackFunction(5,10,getRandomInt));
+    </div>
+    <div class="output-block">8</div>
+
+</div>
