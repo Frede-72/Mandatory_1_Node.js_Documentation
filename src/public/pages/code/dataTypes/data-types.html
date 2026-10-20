@@ -1,5 +1,20 @@
 <h1>DATA TYPES</h1>
 <div class="text-block">
-There are 8 data types in javascript - Number, Bigint, String, Boolean, Undefined, Null, Symbol, Object
-<!-- <h4>Type coercion - implicit conversions</h4> -->
+    There are 8 data types in javascript - Number, Bigint, String, Boolean, Undefined, Null, Symbol, Object
+<h4>Type coercion - implicit conversions</h4>
+    We want to avoid these as they can behave not as intended
+    Example:
+    <div class="code-block">
+        const number = 10; <br>
+        const number2 = "5"; <br>
+        <br>
+        console.log(number + number2);
+    </div>
+    <div class="output-block">105</div>
+    Instead do:
+    <div class="code-block">
+        const sum = number + Number(number2); <br>
+        console.log(sum);
+    </div>
+    <div class="output-block">15</div>
 </div>
